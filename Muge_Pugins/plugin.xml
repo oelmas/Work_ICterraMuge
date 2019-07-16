@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category id="icterra.muge.category.wizards" name="Muge Wizards"></category>
+      <wizard id="icterra.muge.wizard.new.mugeProj" 
+      			name="Muge Project" 
+      			class="icterra.muge.category.wizards.MugeProjectNewWizard"
+      			category="icterra.muge.category.wizards"></wizard>
+   </extension>
+
+</plugin>
