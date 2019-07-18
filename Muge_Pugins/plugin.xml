@@ -9,5 +9,53 @@
       			class="icterra.muge.category.wizards.MugeProjectNewWizard"
       			category="icterra.muge.category.wizards"></wizard>
    </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="org.eclipse.ui.navigator.CommonNavigator"
+            icon="icons/sample.png"
+            id="mugePrj.navigator"
+            name="Muge Project Plug-in Navigator">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.navigator.viewer">
+      <viewerActionBinding
+            viewerId="mugePrj.navigator">
+         <includes>
+            <actionExtension
+                  pattern="org.eclipse.ui.navigator.resources.*">
+            </actionExtension>
+         </includes>
+      </viewerActionBinding>
+      <viewerContentBinding
+            viewerId="mugePrj.navigator">
+         <includes>
+            <contentExtension
+                  pattern="org.eclipse.ui.navigator.resourceContent">
+            </contentExtension>
+            <contentExtension
+                  pattern="org.eclipse.ui.navigator.resources.filters.*">
+            </contentExtension>
+            <contentExtension
+                  pattern="org.eclipse.ui.navigator.resources.linkHelper">
+            </contentExtension>
+            <contentExtension
+                  pattern="org.eclipse.ui.navigator.resources.workingSets">
+            </contentExtension>
+         </includes>
+      </viewerContentBinding>
+   </extension>
+   <extension
+         id="mugePrj.perspective"
+         name="Muge Plug-in Perspective"
+         class="icterra.muge.perspectives.Perspective"
+         point="org.eclipse.ui.perspectives">
+   </extension>
+   <extension
+   targetID="mugePrj.perspective"
+         point="org.eclipse.ui.perspectiveExtensions">
+      <view id="mugePrj.navigator" realtionship="left" realtive="org.eclipse.ui.editorss" ratio="0.25"></view>
+   </extension>
 
 </plugin>

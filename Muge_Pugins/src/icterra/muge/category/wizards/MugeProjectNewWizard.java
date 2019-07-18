@@ -11,7 +11,10 @@ import org.eclipse.ui.dialogs.WizardNewProjectCreationPage;
 
 public class MugeProjectNewWizard extends Wizard implements INewWizard, IExecutableExtension {
 
+	private static final String PAGE_DESCRIPTION = "Create Medical project from scratch";
 	private static final String WIZARD_NAME = "MUGE PROJECT WIZARD";
+	private static final String PAGE_NAME = "Muge Type Project Wizard";
+	private static final String PAGE_TITLE = "From Medical Project";
 	private WizardNewProjectCreationPage _pageOne;
 	
 	@Override
@@ -19,9 +22,11 @@ public class MugeProjectNewWizard extends Wizard implements INewWizard, IExecuta
 		// TODO Auto-generated method stub
 		super.addPages();
 		
-		_pageOne = new WizardNewProjectCreationPage("Muge Type Project Wizard");
-		_pageOne.setTitle("From Medical Project");
-		_pageOne.setDescription("Create Medical project from scratch");
+		
+		_pageOne = new WizardNewProjectCreationPage(PAGE_NAME);
+		
+		_pageOne.setTitle(PAGE_TITLE);
+		_pageOne.setDescription(MugeProjectNewWizard.PAGE_DESCRIPTION);
 		addPage(_pageOne);
 	}
 
