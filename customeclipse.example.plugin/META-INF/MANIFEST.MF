@@ -7,5 +7,5 @@ Bundle-Activator: customeclipse.example.plugin.Activator
 Bundle-Vendor: Lorenzo Bettini
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy

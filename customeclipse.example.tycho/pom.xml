@@ -15,7 +15,7 @@
 
 		<module>../Muge_Pugins</module>
 		<module>../customeclipse.example.ide.site</module>
-		<module>../../../eclipse-workspace/mugeplugin.test</module>
+		
 		
 	</modules>
 
@@ -54,13 +54,13 @@
 
 	<profiles>
 		<profile>
-			<id>luna</id>
+			<id>latest</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
 
 			<properties>
-				<target-file-name>luna</target-file-name>
+				<target-file-name>latest</target-file-name>
 			</properties>
 		</profile>
 
@@ -78,7 +78,7 @@
 			</activation>
 
 			<properties>
-				<target-file-name>luna</target-file-name>
+				<target-file-name>latest</target-file-name>
 			</properties>
 
 			<modules>
@@ -236,9 +236,9 @@
 							-DbuildQualifier=${buildQualifier}</appArgLine>
 						<repositories>
 							<repository>
-								<id>luna</id>
+								<id>latest</id>
 								<layout>p2</layout>
-								<url>http://download.eclipse.org/releases/luna</url>
+								<url>http://download.eclipse.org/releases/2019-06</url>
 							</repository>
 						</repositories>
 						<dependencies>
