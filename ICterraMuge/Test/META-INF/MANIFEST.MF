@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test
+Bundle-SymbolicName: com.icterra.muge.project.plugin.test;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.icterra.muge.project.plugin.test.Activator
+Bundle-Vendor: ICTERRA
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: com.icterra.muge.project.plugin.test
+Bundle-ActivationPolicy: lazy

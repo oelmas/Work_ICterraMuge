@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+    id="mugeXRayNature"
+    name="Muge XRay Nature"
+    point="org.eclipse.core.resources.natures">
+    <runtime>
+        <run
+            class="com.example.product.MugeXRayProjectNature">
+        </run>
+    </runtime>
+</extension>
+</plugin>

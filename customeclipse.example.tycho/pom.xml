@@ -15,8 +15,9 @@
 
 		<module>../Muge_Pugins</module>
 		<module>../customeclipse.example.ide.site</module>
-		
-		
+
+
+		<module>../ICterraMuge/Test</module>
 	</modules>
 
 	<properties>
@@ -271,7 +272,7 @@
 								<artifactId>org.eclipse.ecf.provider.filetransfer</artifactId>
 								<version>[3.2.0,)</version>
 							</dependency>
-
+							
 						</dependencies>
 					</configuration>
 					<executions>
